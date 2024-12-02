@@ -1,0 +1,121 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('background.webp') no-repeat center center fixed; /* Replace this URL with the actual image URL */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #555;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Add an overlay for readability */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    z-index: -1;
+  }
+  
+  /* Thank You Card Styling */
+  .thank-you-card {
+    background: linear-gradient(145deg, #ffffff, #f9f4ef);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px 20px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1; /* Keeps card above the overlay */
+  }
+  
+  .thank-you-card h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .thank-you-card .message {
+    margin: 15px 0 30px;
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .thank-you-card .brand {
+    font-weight: bold;
+    color: #e57373;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .footer div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer .connect a {
+    text-decoration: none;
+    color: #e57373;
+    font-weight: bold;
+  }
+  
+  .footer .logo img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+  
+  .footer .brand {
+    font-size: 1.2rem;
+    color: #e57373;
+  }
+  
+  .footer .stars {
+    color: #ffbc42;
+    font-size: 1.5rem;
+  }
+  
+  /* Decorative Enhancements */
+  .thank-you-card::before,
+  .thank-you-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .thank-you-card::before {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 213, 213, 0.2);
+    top: -50px;
+    left: -50px;
+  }
+  
+  .thank-you-card::after {
+    width: 150px;
+    height: 150px;
+    background: rgba(243, 229, 193, 0.2);
+    bottom: -30px;
+    right: -30px;
+  }
+  
